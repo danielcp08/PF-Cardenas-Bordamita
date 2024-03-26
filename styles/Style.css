@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  @font-face {
+    font-family: Shantellsans;
+    src: url(../assets/fonts/ShantellSans-Italic-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf);
+  }
+  
+  @font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Light.ttf);
+  }
+  
+
+  body {
+    font-family: Roboto, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: Shantellsans, sans-serif;
+  }
+  
+
+  header {
+    background-color: rgb(238, 187, 238);
+    padding: 20px;
+  }
+  
+
+  nav ul {
+    list-style: none;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+
+  .hero {
+    background-image: url(../assets/images/hilos.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .hero .container { 
+    background-color: rgba(255, 255, 255, 0.315);
+    margin-top: 5px;
+    padding: 30px auto;
+    width: 1200px; 
+  }
+  
+  .hero h1 {
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .hero span {
+    display: inline-block;
+    width: 100%; 
+  }
+  
+
+  .sobre-nosotros {
+    background-image: url(../assets/images/hilos\ 2.jpeg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .sobre-nosotros .container { 
+    background-color: rgba(255, 255, 255, 0.575);
+    margin-top: 5px;
+    padding: 30px;
+    width: 800px; 
+  }
+  
+  .contacto {
+    background-image: url(../assets/images/hilos\ 3.jpeg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    padding: 30px;
+  }
+  
+  .instagram {
+    position: fixed;
+    right: 0;
+    bottom: 50px;
+    border-radius: 5%;
+  }
+  
+
+  .footer {
+    background: rgba(255, 0, 255, 0.473);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .columnas ul {
+    display: inline;
+    width: 800px; 
+  }
+  
+  .derechos {
+    text-align: center;
+  }
+  
+
+  @media (max-width: 768px) {
+  
+    .hero .container,
+    .sobre-nosotros .container,
+    .columnas ul {
+      width: 100%;
+    }
+  }
+
+  .contacto-grupo {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .contacto-grupo {
+      width: 100%;
+    }
+  }
+  
+  
+  @media (min-width: 768px) {
+    .contacto-grupo {
+      display: flex;
+      width: 50%;
+    }
+    label {
+      width: 30%;
+    }
+    input, textarea {
+      width: 70%;
+    }
+  }
+
+  .grande {
+    background: rgba(255, 0, 255, 0.473);
+    padding: 5px;
+}
+
+.columnas ul{
+   display:inline;
+   width: 800px;
+}
+
+
+.derechos{
+    text-align: center;
+}
