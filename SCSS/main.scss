@@ -1,0 +1,147 @@
+$base-margin: 0;
+$base-padding: 0;
+$box-sizing: border-box;
+
+* {
+  margin: $base-margin;
+  padding: $base-padding;
+  box-sizing: $box-sizing;
+}
+
+
+@font-face {
+  font-family: "Shantellsans";
+  src: url("../assets/fonts/ShantellSans-Italic-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Light.ttf");
+}
+
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Shantellsans", sans-serif;
+}
+
+
+$header-bg-color: rgb(238, 187, 238);
+$header-padding: 20px;
+
+header {
+  background-color: $header-bg-color;
+  padding: $header-padding;
+}
+
+
+$nav-list-style: none;
+$nav-position: absolute;
+$nav-top: 80px;
+$nav-right: 20px;
+
+nav ul {
+  list-style: $nav-list-style;
+  position: $nav-position;
+  top: $nav-top;
+  right: $nav-right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+
+@mixin hero-styles($image, $height) {
+  background-image: url($image);
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  height: $height;
+  width: 100%;
+  padding: 30px;
+}
+
+.hero {
+  @include hero-styles("../assets/images/hilos.jpg", 700px);
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.315);
+    margin-top: 5px;
+    padding: 30px auto;
+    width: 1200px;
+  }
+
+  h1 {
+    display: inline-block;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+
+  span {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.sobre-nosotros, .contacto {
+  @include hero-styles(
+    // Use placeholder for image paths to avoid repetition
+    $image-placeholder, 700px
+  );
+
+  .container {
+    background-color: rgba(255, 255, 255, 0.575);
+    margin-top: 5px;
+    padding: 30px;
+    width: 800px; // Override for sections
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hero .container,
+  .sobre-nosotros .container,
+  .contacto .container,
+  .columnas ul {
+    width: 100%;
+  }
+}
+
+
+.contacto-grupo {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .contacto-grupo {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacto-grupo {
+    display: flex;
+    width: 50%;
+  }
+
+  label {
+    width: 30%;
+  }
+
+  input, textarea {
+    width: 70%;
+  }
+}
+
+
+$footer-bg-color: rgba(255, 0, 255, 0.473);
