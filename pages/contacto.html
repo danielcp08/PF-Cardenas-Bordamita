@@ -3,29 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/Style.css">
-  <title>Contacto | Bordamita</title>
-  <link rel="shortcut icon" href="../assets/images/bordamita.jpg">
-<body>
-  <header>
-    <nav class="menu">
-      <a href="index.html">
-        <img width="200" height="150" src="../assets/images/bordamita.jpg" alt="logo de Bordamita">
-      </a>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a href="../index.html">Ropa</a></li>
-        <li><a href="../index.html">Accesorios</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-    </header>
-    <main id="principal">
+  <link rel="stylesheet" href="../CSS/Style.css">
+  <title>Bordamita</title>
+  <link rel="shortcut icon" href="../assets/images/bordamita.jpg" type="image/">
+</head>
 
-        <section class="contacto">
-            <h2>Contáctanos</h2>
-            <form action="enviar.php" method="post">
+
+<body>
+    <header>
+      <nav class ="navbar navbar-expand-lg" style="background-color:#efbdf2;">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+            <img src="../assets/images/bordamita.jpg" alt="logo Bordamita" width="200" height="150">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./comunidad.html">Comunidad</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+<main>
+  <section class="text-center p-5">
+            <h2 class="pt-5 text-center" style="color: rgb(245, 6, 245)"> Contáctanos</h2>
+            <form class="col-md-6 p-3" action="./procesar.php" method="post" enctype="application/x-www-form-urlencoded">
               <div class="contacto-grupo">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -38,55 +56,56 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" required></textarea>
               </div>
-              <button type="submit">Enviar mensaje</button>
+              <div class="col-12 ">
+                <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+              </div>
             </form>
-          </section>
-          <ul>
-            <li class=instagram>
-                <a target="_blank" href="https://www.instagram.com/tiendabordamita/">
-                    <img width="50" height="50" src="../assets/images/instagram.png" alt="instagram">
-                </a>
-            </li>
-        </ul>
+  </section>
 
-    </id=>
+<ul>
+  <li class=instagram>
+    <a target="_blank" href="https://www.instagram.com/tiendabordamita/">
+      <img width="50" height="50" src="../assets/images/instagram.png" alt="instagram">
+    </a>
+  </li>
+</ul>
 
-    <footer class="grande">
-        <div class="todo">
-          <div class="columnas">
-            <div class="columna info-servicio-al-cliente">
-              <h2>SERVICIO AL CLIENTE</h2>
-              <ul class="menusc">
-                <li><p>Lineas de atencion:</p></li>
-                <li><p>Tel:(320) 2561759</p></li>
-                <li><p>Horarios de Atencion:</p></li>
-                <li><p>Lunes a viernes de 7:30am a 5:00 pm</p></li>
-              </ul>
-            </div>
-            <div class="columna info-sobre-bordamita">
-              <h2>SOBRE BORDAMITA</h2>
-              <ul class="menusb">
-                <li><p>Tiendas</p></li>
-                <li><p>Nuevo</p></li>
-                <li><p>venta personalizada</p></li>
-              </ul>
-            </div>
-            <div class="columna info-info-bordamita">
-              <h2>INFO BORDAMITA</h2>
-              <ul class="menuib">
-                <li><p>Busqueda</p></li>
-                <li><p>Envios</p></li>
-                <li><p>Cambios y devoluciones</p></li>
-                <li><p>Términos y uso del sitio</p></li>
-              </ul>
-            </div>
-          </div>
-          <div class="derechos">
-            <p>Copyright 2024 © Bordamita. | Todos los derechos reservados</p>
-          </div>
+</main>
+
+    <footer class="footer bg-primary">
+      <nav class= "row mx-auto p-5" >
+        <div class="col-md-3">
+          <h5>SERVICIO AL CLIENTE</h5>
+          <p class="p_footer">Lineas de atencion:</p>
+          <p class="p_footer">Correo: bordamita@gmail.com</p>
+          <p class="p_footer">Tel:(320) 2561759</p>
+          <p class="p_footer">Horarios de Atencion:</p>
+          <p class="p_footer">Lunes a viernes de 7:30am a 5:00 pm</p>
+        </div>     
+        <div class="col-md-3">
+          <h5>SOBRE BORDAMITA</h5>
+          <p class="p_footer">Tiendas</p>
+          <p class="p_footer">Nuevo</p>
+          <p class="p_footer">venta personalizada</p>
         </div>
-      </footer>
+        <div class="col-md-3">
+          <h5>INFO BORDAMITA</h5>
+          <p class="p_footer">Busqueda</p>
+          <p class="p_footer">Envios</p>
+          <p class="p_footer">Cambios y devoluciones</p>
+          <p class="p_footer">Términos y uso del sitio</p>
+        </div>
+        <div class="col-md-3">
+          <h5>METODOS DE PAGO</h5>
+          <img src="../assets/images/pagos.png" alt="Metodos de pago">
+        </div>
+        <div class="footer__copyright">
+          <hr class="footer__line">
+          <p class="text-center">Copyright 2024 | Todos los derechos reservados <strong class="footer_name">© Bordamita.</strong></p>
+        </div>
+      </nav>
+    </footer>
 
-    </main>
+    
 </body>
 </html>

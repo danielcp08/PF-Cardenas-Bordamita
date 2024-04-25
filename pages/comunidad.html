@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <title>Comunidad | Bordamita</title>
+    <link rel="shortcut icon" href="../assets/images/bordamita.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+      <nav class ="navbar navbar-expand-lg" style="background-color:#efbdf2;">
+        <div class="container">
+          <a class="navbar-brand" href="/index.html">
+            <img src="../assets/images/bordamita.jpg" alt="logo Bordamita" width="200" height="150">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
+            <ul class="navbar-nav nav nav-underline">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./comunidad.html">comunidad</a>
+              </li>
+              <li>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main>
+    <div class="text-center p-5">
+        <h5>¡Se parte de BORDAMITA</h5>
+        <h6>Al ser parte de nuestra comunidad podras disfrutar de:</h6>
+        <ul>
+            <li class="tex">❤️ Descuentos exclusivos</li>
+            <li class="tex">❤️ Acompañamiento constante en tu compra</li>
+            <li class="tex">❤️ Historial de tus busquedas favoritas</li>
+            <li class="tex">❤️ Prioridad en nustras nuevas colecciones</li>  
+        </ul>
+      </div>
+        <section class="row p-5">
+            <form class="col-md-6 p-3" action="./procesar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="p-2">
+                    <h1 class="pt-5 text-center" style="color: plum;">ACCEDER</h1>
+                    <p>Si ya estás registrado solo agrega tu usuario y contraseña para que puedas disfrutar de nuestros beneficios.</p>
+                </div>
+                <div class="col">
+                    <label for="inputEmail4" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Introduzca su correo" aria-label="Introduzca su correo" required>
+                </div>
+                    <div class="col">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Introduzca su contraseña" aria-label="Introduzca su contraseña" required>
+                    </div>
+                    <div>
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Recuérdame
+                        </label>
+                    </div>
+                    <div class="pt-5 text-center">
+                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                    </div>
+                </div>
+            </form>
+            <form class="col-md-6 p-3" action="./procesar.php" method="post" enctype="application/x-www-form-urlencoded">
+                <div class="p-2">
+                    <h1 class="pt-5 text-center" style="color: plum;"> REGISTRATE</h1>
+                    <p>Para esta sección primero queremos conocerte</p>
+                </div>
+                    <div class="col">
+                    <label for="formGroupExampleInput" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu nombre" required>
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label">Celular</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingresa tu numero de celular" required>
+                        
+                    <div class="col pt-4">
+                        <label for="inputEmail4" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresa tu correo" aria-label="Introduzca su correo" required>
+                    </div>
+                    <div class="col">
+                        <label for="inputPassword4" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Introduce tu contraseña" aria-label="Introduzca su contraseña" required>
+                    </div>
+                    <div class="col">
+                        <label for="inputPassword4" class="form-label">Repetir contraseña*</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Escribe tu conraseña nuevamente" aria-label="Introduzca su contraseña" required>
+                    </div>
+                    <div class="form-check pt-5 text-center">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Al crear una cuenta significa que aceptas nuestros Términos y condiciones de nuestra Política de seguridad.
+                        </label>
+                    </div>
+                    <div class="pt-5 text-center">
+                        <button type="submit" class="btn btn-primary">Registrar</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <ul>
+            <li class=instagram>
+              <a target="_blank" href="https://www.instagram.com/tiendabordamita/">
+                <img width="50" height="50" src="../assets/images/instagram.png" alt="instagram">
+              </a>
+            </li>
+          </ul>
+          
+</main>
+
+
+<footer class="footer bg-primary">
+    <nav class= "row mx-auto p-5" >
+      <div class="col-md-3">
+        <h5>SERVICIO AL CLIENTE</h5>
+        <p class="p_footer">Lineas de atencion:</p>
+        <p class="p_footer">Correo: bordamita@gmail.com</p>
+        <p class="p_footer">Tel:(320) 2561759</p>
+        <p class="p_footer">Horarios de Atencion:</p>
+        <p class="p_footer">Lunes a viernes de 7:30am a 5:00 pm</p>
+      </div>     
+      <div class="col-md-3">
+        <h5>SOBRE BORDAMITA</h5>
+        <p class="p_footer">Tiendas</p>
+        <p class="p_footer">Nuevo</p>
+        <p class="p_footer">venta personalizada</p>
+      </div>
+      <div class="col-md-3">
+        <h5>INFO BORDAMITA</h5>
+        <p class="p_footer">Busqueda</p>
+        <p class="p_footer">Envios</p>
+        <p class="p_footer">Cambios y devoluciones</p>
+        <p class="p_footer">Términos y uso del sitio</p>
+      </div>
+      <div class="col-md-3">
+        <h5>METODOS DE PAGO</h5>
+        <img src="../assets/images/pagos.png" alt="Metodos de pago">
+      </div>
+      <div class="footer__copyright">
+        <hr class="footer__line">
+        <p class="text-center">Copyright 2024 | Todos los derechos reservados <strong class="footer_name">© Bordamita.</strong></p>
+      </div>
+    </nav>
+  </footer>
+
+<!--  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

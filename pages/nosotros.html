@@ -3,39 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/Style.css">
+  <link rel="stylesheet" href="../CSS/Style.css">
   <title>Nosotros | Bordamita</title>
   <link rel="shortcut icon" href="../assets/images/bordamita.jpg">
 </head>
+
 <body>
+
+
   <header>
-    <nav class="menu">
-      <a href="index.html">
-        <img width="200" height="150" src="../assets/images/bordamita.jpg" alt="logo de Bordamita">
-      </a>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./nosotros.html">Nosotros</a></li>
-        <li><a href="../index.html">Ropa</a></li>
-        <li><a href="../index.html">Accesorios</a></li>
-        <li><a href="./contacto.html">Contacto</a></li>
-      </ul>
+    <nav class ="navbar navbar-expand-lg" style="background-color:#efbdf2;">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img src="../assets/images/bordamita.jpg" alt="logo Bordamita" width="200" height="150">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
+          <ul class="navbar-nav nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./comunidad.html">comunidad</a>
+            </li>
+            <li>
+              <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-  <main id="principal">
-    <section class="sobre-nosotros">
-      <h1>Sobre nosotros</h1>
-      <div class="sobre-nosotros-texto">
-        <p>Hola, somos emprendedoras de Bogotá y creadoras de Bordamita, un proyecto que nació en el 2023 de la pasión por el bordado a mano. Nos fascinaba el arte de tejer historias con hilos y agujas, y hoy tenemos la fortuna de convertir esa pasión en nuestro trabajo.</p>
-        <p>En Bordamita, cada puntada es una expresión de tradición, creatividad y amor por lo artesanal. Utilizo técnicas ancestrales de bordado para crear piezas únicas y personalizadas que reflejan la personalidad y el estilo de mis clientes.</p>
-        <p>Bordado a mano en ropa, bolsos, zapatos, cojines, cuadros y mucho más. También diseño colecciones exclusivas inspiradas en la cultura colombiana, la naturaleza y las emociones humanas.</p>
-        <p>Mi trabajo ha sido reconocido por clientes de diferentes partes del país y hemos tenido la oportunidad de participar en diferentes ferias de artesanías locales.</p>
-        <p>Para nosotros, Bordamita es más que un negocio, es una forma de expresión artística y un espacio donde podemos compartir la pasión con el mundo. Cada pieza que bordo es una creación única, llena de dedicación, cuidado y alma.</p>
-        <p>Si estás buscando piezas únicas y personalizadas, llenas de tradición y significado, te invitamos a conocer Bordamita. Puedes encontrar mis productos en nuestra tienda online o contactarme directamente para realizar un pedido personalizado.</p>
-        <p>¡Te espero!</p>
+
+  
+  <main>
+    <section class="container p-5 mx-auto" style="contacto">
+      <div class="row">
+        <div class="col-md-6 sm-2">
+          <h1>Sobre nosotros</h1>
+            <p>Hola, somos emprendedores de Bogotá y creadoras de Bordamita, un proyecto que nació en el 2023 de la pasión por el bordado a mano. Nos fascinaba el arte de tejer historias con hilos y agujas, y hoy tenemos la fortuna de convertir esa pasión en nuestro trabajo.</p>
+            <p>En Bordamita, cada puntada es una expresión de tradición, creatividad y amor por lo artesanal. Utilizo técnicas ancestrales de bordado para crear piezas únicas y personalizadas que reflejan la personalidad y el estilo de mis clientes.</p>
+            <p>Bordado a mano en ropa, bolsos, zapatos, cojines, cuadros y mucho más. También diseño colecciones exclusivas inspiradas en la cultura colombiana, la naturaleza y las emociones humanas.</p>
+            <p>Mi trabajo ha sido reconocido por clientes de diferentes partes del país y hemos tenido la oportunidad de participar en diferentes ferias de artesanías locales.</p>
+            <p>Para nosotros, Bordamita es más que un negocio, es una forma de expresión artística y un espacio donde podemos compartir la pasión con el mundo. Cada pieza que bordo es una creación única, llena de dedicación, cuidado y alma.</p>
+            <p>Si estás buscando piezas únicas y personalizadas, llenas de tradición y significado, te invitamos a conocer Bordamita. Puedes encontrar mis productos en nuestra tienda online o contactarme directamente para realizar un pedido personalizado.</p>
+            <p>¡Te esperamos!</p>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="col-md-6 sm-2 d-md-block carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../assets/images/bolsa.jpg" class="d-block w-100" alt="..." style="width: 200px; height: 200px;">
+              </div>  
+              <div class="carousel-item">
+                <img src="../assets/images/detalle.jpg" class="d-block w-100" alt="..." style="width: 300px; height: 300px;">
+              </div>
+              <div class="carousel-item">
+                <img src="../assets/images/gorra.jpg" class="d-block w-100" alt="..." style="width: 200px; height: 300px;">
+              </div>
+            </div>  
+        </div>
       </div>
-      <img width="300" height="300" src="./assets/images/bdm5.jpg" alt="gorra bordada">
     </section>
+    
+    
     <ul>
       <li class="instagram">
         <a target="_blank" href="https://www.instagram.com/tiendabordamita/">
@@ -43,42 +78,43 @@
         </a>
       </li>
     </ul>
-    <footer class="grande">
-        <div class="todo">
-          <div class="columnas">
-            <div class="columna info-servicio-al-cliente">
-              <h2>SERVICIO AL CLIENTE</h2>
-              <ul class="menusc">
-                <li><p>Lineas de atencion:</p></li>
-                <li><p>Tel:(320) 2561759</p></li>
-                <li><p>Horarios de Atencion:</p></li>
-                <li><p>Lunes a viernes de 7:30am a 5:00 pm</p></li>
-              </ul>
-            </div>
-            <div class="columna info-sobre-bordamita">
-              <h2>SOBRE BORDAMITA</h2>
-              <ul class="menusb">
-                <li><p>Tiendas</p></li>
-                <li><p>Nuevo</p></li>
-                <li><p>venta personalizada</p></li>
-              </ul>
-            </div>
-            <div class="columna info-info-bordamita">
-              <h2>INFO BORDAMITA</h2>
-              <ul class="menuib">
-                <li><p>Busqueda</p></li>
-                <li><p>Envios</p></li>
-                <li><p>Cambios y devoluciones</p></li>
-                <li><p>Términos y uso del sitio</p></li>
-              </ul>
-            </div>
-          </div>
-          <div class="derechos">
-            <p>Copyright 2024 © Bordamita. | Todos los derechos reservados</p>
-          </div>
-        </div>
-      </footer>
 
-    </main>
+  </main>
+
+  <footer class="footer bg-primary">
+    <nav class= "row mx-auto p-5" >
+      <div class="col-md-3">
+        <h5>SERVICIO AL CLIENTE</h5>
+        <p class="p_footer">Lineas de atencion:</p>
+        <p class="p_footer">Correo: bordamita@gmail.com</p>
+        <p class="p_footer">Tel:(320) 2561759</p>
+        <p class="p_footer">Horarios de Atencion:</p>
+        <p class="p_footer">Lunes a viernes de 7:30am a 5:00 pm</p>
+      </div>     
+      <div class="col-md-3">
+        <h5>SOBRE BORDAMITA</h5>
+        <p class="p_footer">Tiendas</p>
+        <p class="p_footer">Nuevo</p>
+        <p class="p_footer">venta personalizada</p>
+      </div>
+      <div class="col-md-3">
+        <h5>INFO BORDAMITA</h5>
+        <p class="p_footer">Busqueda</p>
+        <p class="p_footer">Envios</p>
+        <p class="p_footer">Cambios y devoluciones</p>
+        <p class="p_footer">Términos y uso del sitio</p>
+      </div>
+      <div class="col-md-3">
+        <h5>METODOS DE PAGO</h5>
+        <img src="../assets/images/pagos.png" alt="Metodos de pago">
+      </div>
+      <div class="footer__copyright">
+        <hr class="footer__line">
+        <p class="text-center">Copyright 2024 | Todos los derechos reservados <strong class="footer_name">© Bordamita.</strong></p>
+      </div>
+    </nav>
+  </footer>
+
+
 </body>
 </html>
